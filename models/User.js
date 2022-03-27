@@ -3,7 +3,7 @@ const dateFormat = require('../utils/dateFormat');
 
 const UserSchema = new Schema(
     {
-        UserName: {
+        userName: {
             type: String,
             unique: true,
             required: true,

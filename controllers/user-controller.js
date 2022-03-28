@@ -1,19 +1,19 @@
 const { User, Thought } = require('../models');
 
 const userController = {
-  // get all users
-  getAllUser(req, res) {
-    user.find({})
-        .populate({
-            path: 'thoughts',
-            select: '-__v'
-        })
-        .select('-__v')
-        .sort({ _id: -1 })
-        .then(dbUserData => res.json(dbUserData))
-        .catch(err => {
-            console.log(err);
-            res.sendStatus(400);
+    // get all users
+    getAllUser(req, res) {
+        user.find({})
+            .populate({
+                path: 'thoughts',
+                select: '-__v'
+            })
+            .select('-__v')
+            .sort({ _id: -1 })
+            .then(dbUserData => res.json(dbUserData))
+            .catch(err => {
+                console.log(err);
+                res.sendStatus(400);
         });
     },
 
@@ -92,7 +92,7 @@ const userController = {
     deleteFriend({ params }, res) {
         User.findOneAndDelete(
             { _id: params.userId },
-            { $push: { friends: params.friendId }},
+            { $pull: { friends: params.friendId }},
             { new: true }
         )
         .then((dbUserData) => {

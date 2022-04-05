@@ -90,7 +90,7 @@ const userController = {
 
     // Delete a friend fron User
     deleteFriend({ params }, res) {
-        User.findOneAndDelete(
+        User.findOneAndUpdate(
             { _id: params.userId },
             { $pull: { friends: params.friendId }},
             { new: true }

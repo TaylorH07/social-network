@@ -32,7 +32,21 @@ This application is covered by the MIT License license.
 
 ## Tests
 
-✏️ N/A
+### User Routes
+
+✏️ https://watch.screencastify.com/v/fR7EWVHN3L9MXH6gULgg
+
+### Thought Routes
+
+✏️ https://watch.screencastify.com/v/UL6gu9e9J8W7yVtvexV5
+
+### Friend Routes
+
+✏️ https://watch.screencastify.com/v/sJJhXwTeVRLLQfja75aa
+
+### Reaction Routes
+
+✏️ https://watch.screencastify.com/v/NDmNXrNeRzd3KNF9pOOo
 
 ## Questions
 
